@@ -1,0 +1,175 @@
+:root {
+  --bg: #f4f2ff;
+  --card: #ffffff;
+  --text: #2d3436;
+  --main: #6c5ce7;
+  --border: #dcd8f5;
+}
+
+body.dark {
+  --bg: #14121f;
+  --card: #1f1b33;
+  --text: #ece9ff;
+  --border: #343052;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Navigation bar */
+nav {
+  background: var(--main);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+}
+
+nav h2 {
+  color: white;
+  margin: 0 auto 0 0;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+nav button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+/* Page content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.stats {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.stats .card {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* Forms */
+label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: var(--card);
+  color: var(--text);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--main);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.delete-btn {
+  background: #e17055;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.error {
+  color: #e17055;
+  font-weight: 600;
+}
+
+.success {
+  color: #00b894;
+  font-weight: 600;
+}
+
+/* Table */
+.scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+th {
+  color: var(--main);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav h2 {
+    width: 100%;
+  }
+}

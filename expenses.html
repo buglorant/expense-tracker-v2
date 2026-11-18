@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Expenses - Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>🎓 Expense Tracker</h2>
+    <a href="index.html">Home</a>
+    <a href="add.html">Add Expense</a>
+    <a href="expenses.html" class="active">My Expenses</a>
+    <a href="summary.html">Summary</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="themeBtn">🌙 Theme</button>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h1>🧾 My Expenses</h1>
+      <p>Total: <b id="total">₹0.00</b> | Number of expenses: <b id="count">0</b></p>
+
+      <label for="filter">Filter by category</label>
+      <select id="filter">
+        <option>All</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Books</option>
+        <option>Entertainment</option>
+        <option>Other</option>
+      </select>
+
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="list"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

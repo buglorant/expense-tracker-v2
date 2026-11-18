@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary - Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>🎓 Expense Tracker</h2>
+    <a href="index.html">Home</a>
+    <a href="add.html">Add Expense</a>
+    <a href="expenses.html">My Expenses</a>
+    <a href="summary.html" class="active">Summary</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="themeBtn">🌙 Theme</button>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h1>📊 Spending Summary</h1>
+      <p>Total spending: <b id="total">₹0.00</b></p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Total Spent</th>
+          </tr>
+        </thead>
+        <tbody id="summary"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

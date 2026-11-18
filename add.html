@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Expense - Student Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h2>🎓 Expense Tracker</h2>
+    <a href="index.html">Home</a>
+    <a href="add.html" class="active">Add Expense</a>
+    <a href="expenses.html">My Expenses</a>
+    <a href="summary.html">Summary</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="themeBtn">🌙 Theme</button>
+  </nav>
+
+  <main>
+    <div class="card">
+      <h1>➕ Add New Expense</h1>
+      <form id="form">
+        <label for="title">Expense Title</label>
+        <input type="text" id="title" placeholder="e.g. Canteen lunch">
+
+        <label for="amount">Amount (₹)</label>
+        <input type="number" id="amount" placeholder="e.g. 120">
+
+        <label for="category">Category</label>
+        <select id="category">
+          <option value="">-- Select category --</option>
+          <option>Food</option>
+          <option>Travel</option>
+          <option>Books</option>
+          <option>Entertainment</option>
+          <option>Other</option>
+        </select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <p id="msg"></p>
+        <button type="submit" class="btn">Add Expense</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
